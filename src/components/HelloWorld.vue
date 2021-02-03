@@ -13,13 +13,6 @@ defineProps({
   msg: String
 })
 
-fetch('/api/getUser').then(res => {
-  return res.json()
-}).then(data => {
-  console.log(data)
-})
-
-
 </script>
 
 <style scoped>
