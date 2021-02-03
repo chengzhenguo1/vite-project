@@ -1,7 +1,7 @@
 <template>
   <div class="app-wrapper">
     <!-- 侧边栏 -->
-    <div style="flex-basis:200px;">Aside</div>
+    <side-bar style="flex-basis:200px;"></side-bar>
     <!-- 右侧内容区 -->
     <div class="container">
       <nav-bar></nav-bar>
@@ -13,6 +13,7 @@
 <script setup>
 import NavBar from './components/NavBar.vue'
 import AppMain from './components/AppMain.vue'
+import SideBar from './components/Sidebar/index.vue'
 </script>
 
 <style lang='scss' scoped>
