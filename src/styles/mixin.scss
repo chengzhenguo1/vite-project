@@ -1,0 +1,25 @@
+@mixin flex-xc-yc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-yc {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-xc {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-xb {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flex-xb-yc {
+    @include flex-xb;
+    align-items: center;
+}
