@@ -1,6 +1,6 @@
 <template>
   <div>
-    test
+    测试的vue
   </div>
 </template>
 

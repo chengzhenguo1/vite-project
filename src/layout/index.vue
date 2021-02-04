@@ -1,7 +1,7 @@
 <template>
   <div class="app-wrapper">
     <!-- 侧边栏 -->
-    <side-bar style="flex-basis:200px;"></side-bar>
+    <side-bar></side-bar>
     <!-- 右侧内容区 -->
     <div class="container">
       <nav-bar></nav-bar>
