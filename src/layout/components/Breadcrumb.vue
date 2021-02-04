@@ -12,7 +12,7 @@
 </template>
 
 <script setup>
-import { watch } from 'vue'
+import { watchEffect } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 
 ref: route = useRoute()
@@ -44,9 +44,8 @@ ref: handleLink = (item) => {
   router.push(path)
 }
 
-
-getBreadcrumb()
-watch(route, getBreadcrumb)
+// 默认第一次就执行
+watchEffect(route, getBreadcrumb)
 
 </script>
 

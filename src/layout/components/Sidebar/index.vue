@@ -1,6 +1,6 @@
 <template>
   <el-scrollbar :class="{'side-bar':!store.state.isCollapse}" wrap-class="scrollbar-wrapper">
-    <el-menu :default-active="activeMenu" :collapse="store.state.isCollapse" :background-color="variables.menuBg" :text-color="variables.menuText" :unique-opened="false" :active-text-color="variables.menuActiveText" mode="vertical">
+    <el-menu :default-active="activeMenu" :collapse="store.state.isCollapse" :background-color="variables.menuBg" :text-color="variables.menuText" :unique-opened="false" :active-text-color="variables.menuActiveText" mode="vertical" :collapse-transition="false">
       <sidebar-item v-for="route in routes" :key="route.path" :item="route" :base-path="route.path" :isCollapse="store.state.isCollapse" />
     </el-menu>
   </el-scrollbar>

@@ -22,13 +22,16 @@
     .scrollbar-wrapper {
         overflow-x: hidden !important;
     }
-    
+
     /* 动态导航栏文字不隐藏问题 */
-    .el-submenu[ariaexpanded=false] .el-submenu__title{
-        span {
-            display: none !important;
+    .el-menu--collapse {
+        .el-submenu .el-submenu__title {
+            span {
+                display: none !important;
+            }
         }
     }
+
     /* 导航隐藏后小箭头 */
     .el-submenu__title {
         .el-icon-arrow-right {
