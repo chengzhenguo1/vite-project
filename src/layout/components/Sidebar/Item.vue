@@ -5,7 +5,7 @@
   </div>
 </template>
 <script setup>
-import { defineProps } from "vue";
+import { defineProps } from "vue"
 
 defineProps({
   icon: {
@@ -16,7 +16,8 @@ defineProps({
     type: String,
     default: "",
   },
-});
+})
+
 </script>
 
 <style scoped>

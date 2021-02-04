@@ -3,11 +3,12 @@ import { createStore } from 'vuex'
 
 const store = createStore({
   state: {
-    counter: 0
+    isCollapse: false
   },
   mutations: {
-    addCounter () {
-      this.state.counter++
+    /* 侧边栏按钮 */
+    changeSideBar () {
+      this.state.isCollapse = !this.state.isCollapse
     }
   }
 })

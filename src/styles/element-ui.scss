@@ -1,17 +1,42 @@
-.el-scrollbar__view,
-.el-menu {
-    height: 100%;
-    overflow-x: hidden;
-}
+#app {
 
-.el-menu-item {
-    overflow: hidden;
-}
+    /* 侧边导航 */
+    .el-scrollbar__view,
+    .el-menu {
+        height: 100%;
+        overflow: hidden;
+    }
 
-.el-scrollbar {
-    height: 100%;
-}
+    .el-menu-item {
+        overflow: hidden;
+    }
 
-.scrollbar-wrapper {
-    overflow-x: hidden !important;
+    .el-scrollbar {
+        height: 100%;
+    }
+
+    .sub-el-icon {
+        margin-right: 5px;
+    }
+
+    .scrollbar-wrapper {
+        overflow-x: hidden !important;
+    }
+    
+    /* 动态导航栏文字不隐藏问题 */
+    .el-submenu[ariaexpanded=false] .el-submenu__title{
+        span {
+            display: none !important;
+        }
+    }
+    /* 导航隐藏后小箭头 */
+    .el-submenu__title {
+        .el-icon-arrow-right {
+            display: none !important;
+        }
+    }
+
+    /*   .nest-menu {
+        padding-left: 10px;
+    } */
 }

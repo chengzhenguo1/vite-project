@@ -1,6 +1,7 @@
 <template>
   <div>
     测试的vue
+    <router-view />
   </div>
 </template>
 

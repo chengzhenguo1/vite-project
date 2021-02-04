@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-  
+  console.log('detail')
 </script>
 
 <style scoped>

@@ -33,14 +33,14 @@ export const routes = [
         meta: { title: "首页", icon: "el-icon-s-home" },
         children: [
           {
-            path: ":id",
+            path: "/home/:id",
             component: () => import("@views/detail.vue"),
             name: "Detail",
             hidden: true,
             meta: {
               title: "详情",
               icon: "el-icon-s-home",
-              activeMenu: "/home",
+              activeMenu: "/home"
             },
           },
         ],
