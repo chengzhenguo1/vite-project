@@ -1,14 +1,16 @@
 <template>
   <div>
     测试的vue
-    <router-view />
   </div>
 </template>
 
-<script>
-import { defineComponent } from 'vue'
-export default defineComponent({
+<script setup>
+import request from '@utils/request.js'
+
+request.get('/getUser').then(res=>{
+  console.log(res)
 })
+
 </script>
 
 <style lang='scss' scoped>

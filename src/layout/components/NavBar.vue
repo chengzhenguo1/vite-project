@@ -17,8 +17,7 @@
             <el-dropdown-item>黄金糕</el-dropdown-item>
             <el-dropdown-item>狮子头</el-dropdown-item>
             <el-dropdown-item>螺蛳粉</el-dropdown-item>
-            <el-dropdown-item disabled>双皮奶</el-dropdown-item>
-            <el-dropdown-item divided>蚵仔煎</el-dropdown-item>
+            <el-dropdown-item divided @click="logOut">登出</el-dropdown-item>
           </el-dropdown-menu>
         </template>
       </el-dropdown>
@@ -32,8 +31,17 @@ import { useStore } from 'vuex'
 
 const store = useStore()
 
+// 侧边栏展开/关闭
 ref: changeSideBar = () => {
   store.commit('changeSideBar')
+}
+
+// 退出登录
+ref: logOut = () => {
+  store.dispatch('user/resetToken').then(()=>{
+    console.log('退出啊')
+  })
+
 }
 </script>
 

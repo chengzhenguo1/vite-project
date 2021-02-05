@@ -1,5 +1,5 @@
 import { createStore } from 'vuex'
-
+import user from './modules/user.js'
 
 const store = createStore({
   state: {
@@ -10,6 +10,9 @@ const store = createStore({
     changeSideBar () {
       this.state.isCollapse = !this.state.isCollapse
     }
+  },
+  modules: {
+    user
   }
 })
 
